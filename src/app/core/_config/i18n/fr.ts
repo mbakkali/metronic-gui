@@ -3,7 +3,7 @@ export const locale = {
 	lang: 'fr',
 	data: {
 		TRANSLATOR: {
-			SELECT: 'choisissez votre langue',
+			SELECT: 'Choisissez votre langue',
 		},
 		MENU: {
 			NEW: 'Nouveau',
@@ -12,7 +12,7 @@ export const locale = {
 			PAGES: 'Pages',
 			FEATURES: 'Fonctionnalités',
 			APPS: 'Applications',
-			DASHBOARD: 'Tableau de Bord',
+			DASHBOARD: 'Accueil',
 		},
 		AUTH: {
 			GENERAL: {
@@ -22,42 +22,42 @@ export const locale = {
 				SIGNUP_BUTTON: 'Registre',
 				FORGOT_BUTTON: 'Mot de passe oublié',
 				BACK_BUTTON: 'Back',
-				PRIVACY: 'Privacy',
-				LEGAL: 'Legal',
+				PRIVACY: 'Confidentialité',
+				LEGAL: 'Légal',
 				CONTACT: 'Contact',
 			},
 			LOGIN: {
 				TITLE: 'Créer un compte',
-				BUTTON: 'Sign In',
+				BUTTON: 'Connexion',
 			},
 			FORGOT: {
-				TITLE: 'Forgotten Password?',
-				DESC: 'Enter your email to reset your password',
-				SUCCESS: 'Your account has been successfully reset.'
+				TITLE: 'Mot de passe oublié ?',
+				DESC: 'Entrez votre email pour réinitialiser votre mot de passe',
+				SUCCESS: 'Vous avez reçu un email de confirmation.'
 			},
 			REGISTER: {
-				TITLE: 'Sign Up',
-				DESC: 'Enter your details to create your account',
-				SUCCESS: 'Your account has been successfuly registered.'
+				TITLE: 'Création d\'un compte',
+				DESC: 'Entrez votre email et mot de passe pour créer votre compte',
+				SUCCESS: 'YVotre compte a bien été crée'
 			},
 			INPUT: {
 				EMAIL: 'Email',
-				FULLNAME: 'Fullname',
+				FULLNAME: 'Nom complet',
 				PASSWORD: 'Mot de passe',
-				CONFIRM_PASSWORD: 'Confirm Password',
+				CONFIRM_PASSWORD: 'Confirmer le mot de passe',
 				USERNAME: 'Nom d\'utilisateur'
 			},
 			VALIDATION: {
 				INVALID: '{{name}} n\'est pas valide',
 				REQUIRED: '{{name}} est requis',
-				MIN_LENGTH: '{{name}} minimum length is {{min}}',
-				AGREEMENT_REQUIRED: 'Accepting terms & conditions are required',
-				NOT_FOUND: 'The requested {{name}} is not found',
-				INVALID_LOGIN: 'The login detail is incorrect',
-				REQUIRED_FIELD: 'Required field',
-				MIN_LENGTH_FIELD: 'Minimum field length:',
-				MAX_LENGTH_FIELD: 'Maximum field length:',
-				INVALID_FIELD: 'Field is not valid',
+				MIN_LENGTH: 'Le champ {{name}} doit faire au moins {{min}} charactères',
+				AGREEMENT_REQUIRED: 'Veuillez accepter les termes généraux',
+				NOT_FOUND: '{{name}} est introuvable',
+				INVALID_LOGIN: 'Login érroné',
+				REQUIRED_FIELD: 'Champ requis',
+				MIN_LENGTH_FIELD: 'Minimum de charactères requis:',
+				MAX_LENGTH_FIELD: 'Minimum de charactères requis:',
+				INVALID_FIELD: 'Champ invalide',
 			}
 		},
 		ECOMMERCE: {
@@ -74,7 +74,7 @@ export const locale = {
 				SEARCH: 'Search',
 				IN_ALL_FIELDS: 'in all fields'
 			},
-			ECOMMERCE: 'éCommerce',
+			ECOMMERCE: 'eCommerce',
 			CUSTOMERS: {
 				CUSTOMERS: 'Les clients',
 				CUSTOMERS_LIST: 'Liste des clients',

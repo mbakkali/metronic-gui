@@ -63,7 +63,7 @@ export class LayoutConfig {
 			menu: {
 				self: {
 					display: true,
-					'root-arrow': false,
+					'root-arrow': true,
 				},
 				desktop: {
 					arrow: true,

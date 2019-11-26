@@ -18,7 +18,8 @@ import { AuthNoticeService, AuthService, Login } from '../../../../core/auth';
  */
 const DEMO_PARAMS = {
 	EMAIL: 'admin@demo.com',
-	PASSWORD: 'demo'
+	PASSWORD: 'demo',
+	DOMAIN : 'domaine'
 };
 
 @Component({
@@ -96,14 +97,21 @@ export class LoginComponent implements OnInit, OnDestroy {
 	 */
 	initLoginForm() {
 		// demo message to show
-		if (!this.authNoticeService.onNoticeChanged$.getValue()) {
+		/*if (!this.authNoticeService.onNoticeChanged$.getValue()) {
 			const initialNotice = `Use account
 			<strong>${DEMO_PARAMS.EMAIL}</strong> and password
 			<strong>${DEMO_PARAMS.PASSWORD}</strong> to continue.`;
 			this.authNoticeService.setNotice(initialNotice, 'info');
-		}
+		}*/
 
 		this.loginForm = this.fb.group({
+
+			domain: [DEMO_PARAMS.DOMAIN, Validators.compose([
+				Validators.required,
+				Validators.minLength(3),
+				Validators.maxLength(320)
+			])
+			],
 			email: [DEMO_PARAMS.EMAIL, Validators.compose([
 				Validators.required,
 				Validators.email,
